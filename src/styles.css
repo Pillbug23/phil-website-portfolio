@@ -1,0 +1,465 @@
+/*For all keyword text*/
+b {
+  color: #FF4500;
+}
+
+/*Navbar styling*/
+.navbar {
+    position: fixed;
+    transition: all 0.3s ease-out 0s;
+    padding: 0.3rem 2rem;
+    font-size: 1.2rem;
+}
+
+/*When screen size shrinks make font bigger/background visible, disable hover line*/
+@media (max-width: 767px) {
+    .navbar {
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      background-color: #181a27;
+    }
+    .navbar-nav .nav-item a::after {
+      display: none;
+    }
+}
+
+/*Scrolling feature colors*/
+.nav-blacked {
+background-color: #1b1a2ea9;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  backdrop-filter: blur(15px);
+}
+
+/*Color and font of the logo*/
+.navbar-brand {
+    color: whitesmoke;
+    font-size: 1.7rem;
+}
+
+/*Logo hover color: tbd what I want it to be*/
+.navbar-brand:hover {
+    color: whitesmoke;
+}
+
+/*Color of each nav item*/
+.navbar-nav .nav-link {
+    color: whitesmoke;
+}
+
+/*Aesthestics each item*/
+.nav-link {
+    font-weight: 200;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+    z-index: 1;
+}
+  
+/*Line drawn from hover left to right, taken from css animations*/
+.nav-link::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 0;
+    border-radius: 16px;
+    background: whitesmoke;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+}
+
+/*Line drawn from hover left to right, taken from css animations*/
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/*button transistions*/
+.fork-btn-inner {
+  position: relative;
+  top: 0;
+  transition: top ease 0.4s;
+}
+
+/*button transistions*/
+.fork-btn-inner:hover {
+    top: -5px;
+}
+
+/*button transistions*/
+.fork-btn-inner:hover::after {
+    width: 0%;
+}
+
+
+
+
+
+
+
+/* Homepage */
+/*Home background image*/
+.home-section-info {
+    position: relative;
+    z-index: -1;
+    background-image: url(./Images/fancy-pants.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/*Name positioning*/
+  .home-header {
+    padding-top: 25px;
+    background-color: #1266F1;
+    border-radius: 30px;
+    align-self: flex-end;
+    margin-bottom: 95px;
+  }
+
+  
+  .home-content-info {
+    padding: 3rem 0 2rem;
+    color: whitesmoke;
+    text-align: left;
+  }
+  
+
+
+
+/*Main tag positioning/font*/
+.heading-name {
+    font-size: 2.5em;
+    padding-left: 35px;
+}
+  
+/*Main tag positioning/font*/
+.major {
+    font-size: 2.6em;
+    padding-left: 35px;
+}
+
+/*description inside about me*/
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  margin-top: 120px;
+  background-color: #1266F1;
+  border-radius: 30px;
+}
+
+/*description inside about me*/
+.home-about-body {
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+/*Hand waving animation*/
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
+
+
+
+
+/*Resume*/
+.resume-section {
+    position: relative;
+    background-image: url(./Images/fancy-pants.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+.resume-pdf {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*Footer*/
+/*Container for footer*/
+.bottom-footer {
+    background-color: rgb(45, 45, 46);
+    bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 2px;
+}
+
+/*Credits*/
+.built-credits {
+  text-align: center;
+}
+
+/*Credits*/
+.built-credits h3 {
+  font-size: 1.1em;
+  color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/*icon body*/
+.footer-icons-body {
+  text-align: center;
+}
+
+.footer-icons {
+  color: whitesmoke;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.icons {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li a {
+  position: relative; 
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 53px;
+  background: rgb(58, 58, 58);
+  border-radius: 40%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FF4500;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #FF4500;
+}
+
+ul li a:hover {
+  color: #FF4500;
+  box-shadow: 0 0 5px #FF4500;
+  text-shadow: 0 0 5px #FF4500;
+}
+
+/*Scroll bar styling*/
+.simplebar-scrollbar::before {
+  background-color: whitesmoke;
+  overflow: auto;
+  opacity: 0.7;
+}
+  
+
+
+
+
+
+/*About section*/
+.about-me-section {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 30px;
+  background-image: url(./Images/fancy-pants.jpg);
+  background-position: top center;
+  background-repeat: repeat;
+  color: whitesmoke;
+}
+
+
+.about-me-title {
+  font-size: 2.1em;
+  padding-bottom: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  color: whitesmoke;
+}
+
+.about-me-blurb {
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about-body {
+  color: whitesmoke;
+  padding-bottom: 20px;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+/*title of skillset*/
+.skillset {
+  color: whitesmoke;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 50px;
+}
+
+.img-fluid {
+
+}
+
+.name-tech {
+  font-size: 0.3em;
+  margin-bottom: -20px;
+}
+
+.line {
+  width: 143px;
+  height: 0;
+  border: 1px solid #C4C4C4;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Tech icons*/
+.tech-stack {
+  font-size: 3.5em;
+  margin: 16px;
+  border:2.6px solid whitesmoke;
+  border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 25px;
+  opacity: 0.83;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 2px 3px 1px #FF4500;
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 767px) {
+  .tech-stack {
+    margin: 10px;
+  }
+}
+
+.tech-stack:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+  border:2.2px solid whitesmoke;
+}
+
+
+
+/*App project section*/
+.app-project-section {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 30px;
+  background-image: url(./Images/fancy-pants.jpg);
+  background-position: top center;
+  background-repeat: repeat;
+  color: whitesmoke;
+}
+
+.project-card {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: auto;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px #FF4500;
+  color: whitesmoke;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+}
+
+.project-card-view:hover {
+  transform: scale(1.04);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 5px #FF4500;
+}
+
+/*Misc section*/
+.misc-section {
+  display: flex;
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 200px;
+  background-image: url(./Images/fancy-pants.jpg);
+  background-position: top center;
+  background-repeat: repeat;
+  color: whitesmoke;
+}
