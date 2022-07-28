@@ -17,6 +17,7 @@ import { FaMountain } from "react-icons/fa";
 
 function Navigationbar({scroller}) {
   const [updateNavbar,setupdateNavbar] = useState(false);
+  const [expand,setExpand] = useState(false);
 
   function scrollView(event) {
     const {scrollTop} = event.target;
@@ -37,37 +38,38 @@ function Navigationbar({scroller}) {
 
   return (
     <Navbar
+      expanded={expand}
       fixed="top"
       expand="md"
       className={updateNavbar ? "nav-blacked" : "navbar"}
     >
         <Container>
-          <Navbar.Brand href="/">PL</Navbar.Brand>
-          <Navbar.Toggle/>
-          <Navbar.Collapse>
+          <Navbar.Brand href="/" className="d-flex">PL</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => {setExpand(expand ? false : "expanded");}}/>
+          <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home" style={{ paddingLeft: "12px", paddingRight: "12px"}}>
           <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/" onClick={() => setExpand(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
           </Nav.Item>
           <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
-              <Nav.Link as={Link} to="/about">
+              <Nav.Link as={Link} to="/about" onClick={() => setExpand(false)}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
           </Nav.Item>
           <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
-              <Nav.Link as={Link} to="/projects">
+              <Nav.Link as={Link} to="/projects" onClick={() => setExpand(false)}>
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
           </Nav.Item>
           <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
-              <Nav.Link as={Link} to="/resume">
+              <Nav.Link as={Link} to="/resume" onClick={() => setExpand(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
           </Nav.Item>
           <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
-              <Nav.Link as={Link} to="/misc">
+              <Nav.Link as={Link} to="/misc" onClick={() => setExpand(false)}>
                 <FaMountain style={{ marginBottom: "2px" }} /> Misc.
               </Nav.Link>
           </Nav.Item>

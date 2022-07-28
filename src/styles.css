@@ -31,6 +31,7 @@ background-color: #1b1a2ea9;
   backdrop-filter: blur(15px);
 }
 
+
 /*Color and font of the logo*/
 .navbar-brand {
     color: whitesmoke;
@@ -211,6 +212,7 @@ background-color: #1b1a2ea9;
     background-repeat: repeat;
     padding-bottom: 60px;
     padding-top: 100px;
+    color: whitesmoke;
 }
 
 .resume-pdf {
@@ -219,11 +221,13 @@ background-color: #1b1a2ea9;
   justify-content: center;
 }
 
+.resume-left {
+  padding-right: 80px;
+}
 
-
-
-
-
+.resume-right {
+  padding-left: 80px;
+}
 
 
 /*Footer*/

@@ -33,6 +33,17 @@ function Resume() {
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.7} />
           </Document>
         </Row>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+            <Button
+              variant="primary"
+              href={pdf}
+              style={{ maxWidth: "250px" }}
+              type="button"
+            >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
       </Container>
       </div>
     );
