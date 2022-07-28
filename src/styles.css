@@ -335,10 +335,6 @@ background-color: #1b1a2ea9;
   padding-top: 50px;
 }
 
-.img-fluid {
-
-}
-
 .name-tech {
   font-size: 0.3em;
   margin-bottom: -20px;
@@ -358,9 +354,9 @@ background-color: #1b1a2ea9;
 /*Tech icons*/
 .tech-stack {
   font-size: 3.5em;
-  margin: 16px;
-  border:2.6px solid whitesmoke;
-  border-radius: 20px;
+  margin: 15px;
+  border:1.9px solid whitesmoke;
+  border-radius: 15px;
   padding: 10px;
   padding-bottom: 25px;
   opacity: 0.83;

@@ -15,7 +15,8 @@ function Homepage() {
         setDisplay1(false)
         setDisplay2(true)
       } else {
-        setDisplay1(false)
+        setDisplay1(true)
+        setDisplay2(false)
       }
     };
     window.addEventListener("scroll",scrollView);

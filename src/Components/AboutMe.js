@@ -76,53 +76,33 @@ function AboutMe() {
                     <Row style={{justifyContent: "center", paddingBottom: "70px"}}>
                         <Col xs={4} md={2} className="tech-stack">
                             <DiPython style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> Python </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <DiJava style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> Java </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <SiJavascript style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> Javascript </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <FaReact style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> React </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <FaNode style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> Node.js </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <SiMysql style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> MySql </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <SiMongodb style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> MongoDb </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <SiPandas style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> Pandas </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <AiFillHtml5 style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> HTML </p>
                         </Col>
                         <Col xs={4} md={2} className="tech-stack">
                             <SiCss3 style={{marginBottom: "15px"}}/>
-                            <hr class="line" />
-                            <p className="name-tech"> CSS </p>
                         </Col>
                     </Row>
                     <h1 className="skillset">
