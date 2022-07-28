@@ -14,16 +14,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 function App() {
-  const ref = useRef();
-  const [scroll,setScroll] = useState(0);
   
   return (
-    <SimpleBar style={{maxHeight: "100vh",backgroundColor: "whitesmoke"}} forceVisible="y" ref={ref} autoHide={false}>
       <Router>
         <div className="App">
-          <Navigationbar scroller={ref}></Navigationbar>
+          <Navigationbar></Navigationbar>
           <Routes>
-            <Route path="/" element={<Homepage scroller={ref}/>}/>
+            <Route path="/" element={<Homepage/>}/>
             <Route path="/about" element={<AboutMe/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/resume" element={<Resume/>}/>
@@ -32,7 +29,6 @@ function App() {
           <Footer/>
         </div>
       </Router>
-    </SimpleBar>
   );
 }
 
