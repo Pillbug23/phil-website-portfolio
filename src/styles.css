@@ -337,21 +337,13 @@ background-color: #1b1a2ea9;
 
 .name-tech {
   font-size: 0.3em;
-  margin-bottom: -20px;
+  margin-bottom: 0px;
 }
 
-.line {
-  width: 143px;
-  height: 0;
-  border: 1px solid #C4C4C4;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 /*Tech icons*/
 .tech-stack {
-  font-size: 4.5em;
+  font-size: 4.0em;
   margin: 15px;
   border:1.9px solid whitesmoke;
   border-radius: 15px;
