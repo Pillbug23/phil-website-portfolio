@@ -23,7 +23,7 @@ function Projects() {
                             <Card.Body>
                                 <Card.Title style={{marginTop: 10}}> CalTrails </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                A simple web application that allows users to search for hiking trails near their location 
+                                A web application that allows users to search for hiking trails near their location 
                                 made with React.js. App allows unique authentication of login and access to user 
                                 profile information. This projects uses API extraction of hiking trail data based on user's 
                                 location. User can favorite hikes and view saved trails through backend.
@@ -130,7 +130,7 @@ function Projects() {
                             <Card.Body>
                                 <Card.Title style={{marginTop: 10}}> Astronomy Database Favoriter </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                    A simple app that retrieves astronomy data information and allows users to favorite
+                                    An app that retrieves astronomy data information and allows users to favorite
                                     trails to view through backend.
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/astronomy-DB">
