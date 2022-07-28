@@ -345,15 +345,13 @@ background-color: #1b1a2ea9;
   height: 0;
   border: 1px solid #C4C4C4;
   margin: 0;
-  display:flex;
-  justify-content: center;
   margin-right: auto;
   margin-left: auto;
 }
 
 /*Tech icons*/
 .tech-stack {
-  font-size: 3.5em;
+  font-size: 4.5em;
   margin: 15px;
   border:1.9px solid whitesmoke;
   border-radius: 15px;
@@ -380,6 +378,8 @@ background-color: #1b1a2ea9;
   overflow: hidden;
   border:2.2px solid whitesmoke;
 }
+
+
 
 
 

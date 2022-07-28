@@ -11,7 +11,7 @@ function Homepage() {
     const [display2,setDisplay2] = useState(false);
 
     function scrollView() {
-      if (window.scrollY >= 10) {
+      if (window.scrollY >= 7) {
         setDisplay1(false)
         setDisplay2(true)
       } else {
