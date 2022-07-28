@@ -15,26 +15,19 @@ import {
 import { CgFileDocument,CgGitFork } from "react-icons/cg";
 import { FaMountain } from "react-icons/fa";
 
-function Navigationbar({scroller}) {
+function Navigationbar() {
   const [updateNavbar,setupdateNavbar] = useState(false);
   const [expand,setExpand] = useState(false);
 
   function scrollView(event) {
-    const {scrollTop} = event.target;
-    if (scrollTop) {
+    if (window.scrollY >= 20) {
       setupdateNavbar(true);
     } else {
       setupdateNavbar(false);
     }
   }
 
-  useEffect(() => {
-    if (scroller.current) {
-      scroller.current
-        .getScrollElement()
-        .addEventListener('scroll', e => scrollView(e));
-    }
-  }, [scroller]);
+  window.addEventListener("scroll",scrollView);
 
   return (
     <Navbar

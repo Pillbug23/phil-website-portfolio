@@ -6,26 +6,19 @@ import coverPhoto from '../Images/code_image.svg';
 import indicator from '../Images/iOS.png';
 import TypeWriterEffect from 'react-typewriter-effect';
 
-function Homepage({scroller}) {
+function Homepage() {
     const [display1,setDisplay1] = useState(true);
     const [display2,setDisplay2] = useState(false);
 
     function scrollView() {
-      if (scroller.current.scrollY) {
+      if (window.scrollY >= 10) {
         setDisplay1(false)
         setDisplay2(true)
       } else {
         setDisplay1(false)
       }
     };
-
-    useEffect(() => {
-      if (scroller.current) {
-        scroller.current
-          .getScrollElement()
-          .addEventListener('scroll', scrollView);
-      }
-    }, [scroller]);
+    window.addEventListener("scroll",scrollView);
 
     return (
         <section>
