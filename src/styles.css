@@ -254,13 +254,20 @@ background-color: #1b1a2ea9;
 
 /*icon body*/
 .footer-icons-body {
+  z-index: 1;
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .footer-icons-body {
+    z-index: 1;
+    text-align: center;
+  }
+}
 .footer-icons {
   color: whitesmoke;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   padding: 0;
 }
 

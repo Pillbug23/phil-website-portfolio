@@ -100,7 +100,7 @@ function Projects() {
                                 </Button>
                                 <Button 
                                     variant="primary"
-                                    href="https://pillbug23.github.io/caltrails.github.io/"
+                                    href="https://philliply-tech.vercel.app/"
                                     style={{ marginLeft: "10px" }}
                                 >
                                     <CgWebsite /> &nbsp;

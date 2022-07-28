@@ -21,7 +21,7 @@ function Navigationbar({scroller}) {
 
   function scrollView(event) {
     const {scrollTop} = event.target;
-    if (scrollTop > 0) {
+    if (scrollTop) {
       setupdateNavbar(true);
     } else {
       setupdateNavbar(false);
