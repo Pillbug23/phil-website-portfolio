@@ -1,6 +1,10 @@
 # Portfolio Website | Phillip Ly
 My personal website (v1.0) featured with a homepage, a resume section, features some of my projects, favorite hikes I've been to, and an about me section with my technical skills. To be updated with a deployment.
 
+Deployed with Vercel
+
+(Note: Had to create a separate repo, deployment with other repo unsuccessful)
+
 # 🛠 Installation and Setup 
 To install dependencies, run npm install
 
@@ -18,6 +22,7 @@ Runs the app in the development mode.
 * React-icons
 * React-grid-gallery
 * CSS3
+* Vercel
 
 # 💡 Features
 📱 Fully responsive website viewable on all devices
