@@ -1,4 +1,4 @@
-# Portfolio Website | Phillip Ly [Demo](https://philliply-tech.vercel.app/)
+# Portfolio Website | Phillip Ly [philliply-tech](https://philliply-tech.vercel.app/)
 My personal website (v1.0) featured with a homepage, a resume section, features some of my projects, favorite hikes I've been to, and an about me section with my technical skills. To be updated with a deployment.
 
 Deployed with Vercel
