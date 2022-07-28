@@ -94,7 +94,7 @@ function Projects() {
                                 react-router-dom. The website also includes a personal hikes for anyone interested in checking
                                 it out.
                                 </Card.Text>
-                                <Button variant="primary" href="https://github.com/Pillbug23/webdev-site/tree/main/webdev-site-phil">
+                                <Button variant="primary" href="https://github.com/Pillbug23/phil-website-portfolio">
                                     <BsGithub/>&nbsp;
                                     GitHub
                                 </Button>
