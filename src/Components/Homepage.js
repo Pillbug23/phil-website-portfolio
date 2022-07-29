@@ -63,14 +63,7 @@ function Homepage() {
             </Col>
             
             
-            <Col md={5} style={{ paddingBottom: 20}}>
-              <img
-                src={coverPhoto}
-                alt="generic-pic"
-                className="img-fluid"
-                style={{ maxHeight: "550px",paddingTop: 30}}
-              />
-            </Col>
+            
           </Row>
           
           {display1 && (

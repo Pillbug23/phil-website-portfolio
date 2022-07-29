@@ -2,7 +2,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import React,{useState,useEffect} from 'react';
 import { Container, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
-import pdf from "../Images/Resume-Phillip-Ly.pdf"
+import pdf from "../Images/Resume_Phillip_Ly.pdf"
 import { Document, Page, pdfjs } from "react-pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
