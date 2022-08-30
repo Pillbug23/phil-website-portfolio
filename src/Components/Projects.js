@@ -8,6 +8,7 @@ import astronomy from "../Images/astronomy.png";
 import website from "../Images/website.png";
 import git from "../Images/gitlet.png";
 import game from "../Images/byow.png";
+import safety from "../Images/sf_safety.png";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 
@@ -55,7 +56,7 @@ function Projects() {
                                 between them). The user is able to move around with the keyboard (WASD keys) and interact 
                                 with objects. The main objective of this game is to collect 10 flowers.
                                 </Card.Text>
-                                <Button variant="primary" href="https://github.com/Pillbug23/caltrails.github.io">
+                                <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/BYOW">
                                     <BsGithub/>&nbsp;
                                     GitHub
                                 </Button>
@@ -74,7 +75,7 @@ function Projects() {
                                 user can find specific commits with checkout and find methods. User can create new branches and delete them with branch
                                 methods. User can merge multiple branches with the merge method, delete branches with checkout. 
                                 </Card.Text>
-                                <Button variant="primary" href="https://github.com/Pillbug23/caltrails.github.io">
+                                <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/Gitlet">
                                     <BsGithub/>&nbsp;
                                     GitHub
                                 </Button>
@@ -89,10 +90,10 @@ function Projects() {
                             <Card.Body>
                                 <Card.Title style={{marginTop: 10}}> Portfolio Website </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                My portfolio website built with react as a frontend. Usage of react-icons/bootstrap to style
+                                My portfolio website built with React as a frontend. Usage of react-icons/bootstrap to style
                                 and design website. User is able to display,view, and navigate to different pages through 
-                                react-router-dom. The website also includes a personal hikes for anyone interested in checking
-                                it out.
+                                react-router-dom. The website also includes an image gallery personal hikes for anyone 
+                                interested in checking it out.
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/phil-website-portfolio">
                                     <BsGithub/>&nbsp;
@@ -115,7 +116,10 @@ function Projects() {
                             <Card.Body>
                                 <Card.Title style={{marginTop: 10}}> 2048 clone </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                A recreation of the popular mobile game 2048.
+                                A recreation of the popular mobile game 2048. The game is played on a 4x4 grid, where the objective of 
+                                the game is to merge numbered tiles until it reaches the number 2048. Two tiles of the same value merge into 
+                                one tile containing double the initial number. The user controls the direction of which the tiles merge
+                                by using the arrow keys.
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/2048/game2048">
                                     <BsGithub/>&nbsp;
@@ -126,14 +130,14 @@ function Projects() {
                     </Col>
                     <Col md={4} className="project-card">
                         <Card className="project-card-view">
-                            <Card.Img variant="top" src={astronomy} alt="card-img"/>
+                            <Card.Img variant="top" src={safety} alt="card-img"/>
                             <Card.Body>
-                                <Card.Title style={{marginTop: 10}}> Astronomy Database Favoriter </Card.Title>
+                                <Card.Title style={{marginTop: 10}}> SF Food Safety Analysis </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                    An app that retrieves astronomy data information and allows users to favorite
-                                    trails to view through backend.
+                                    An analysis of food safety ratings in San Francisco using Python's data visualization tools and Pandas. In this project we explore
+                                    ratings based on zip code, violations correlated with low scoring resturants, recent and highly located violations within the SF region.
                                 </Card.Text>
-                                <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/astronomy-DB">
+                                <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/Food_Safety">
                                     <BsGithub/>&nbsp;
                                     GitHub
                                 </Button>

@@ -29,9 +29,9 @@ function Footer() {
                         </li>
                         <li className="icons">
                             <a 
-                                href="https://github.com/Pillbug23"
+                                href="https://www.linkedin.com/in/phillip-ly-3a5730244/"
                                 style={{color: "white"}}
-                                rel="github-ref"
+                                rel="linkedin-ref"
                             >
                                 <AiOutlineLinkedin/>
                             </a>
@@ -40,7 +40,7 @@ function Footer() {
                             <a 
                                 href={`mailto:philly79@berkeley.edu`}
                                 style={{color: "white"}}
-                                rel="github-ref"
+                                rel="email-ref"
                             >
                             <AiOutlineMail/>
                             </a>
