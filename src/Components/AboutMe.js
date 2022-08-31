@@ -28,7 +28,7 @@ function AboutMe() {
                             About Me
                         </h1>
                         <p style={{}} className="about-body">
-                            Hello! My name is Phillip Ly and I am from Fremont, California. I am a recent Graduate
+                            Hello! My name is Phillip Ly, and I am from Fremont, California. I am a graduate
                             of  
                             <i>
                             <b> UC Berkeley </b>
@@ -43,12 +43,11 @@ function AboutMe() {
                             <b> full-stack developer (MERN) </b>
                             </i>  
                             specializing in front-end development. 
-                            I create visual, creative and engaging experiences, and also functional
-                            interfaces using 
+                            I create visual, creative, and engaging experiences, using 
                             <i>
                             <b> React/Node.js. </b>
                             </i> 
-                            Design to me is just as important as good development. I work with tools like 
+                            I work with tools like 
                             <i>
                             <b> Figma </b>
                             </i> 
@@ -56,7 +55,7 @@ function AboutMe() {
                             I have a passion for developing new skills, coding, and creating dynamic interfaces applicable to users.
                             <br/>
                             <br/>
-                            Aside from coding, I love to play video games 🎮, attempt to bake/cook new
+                            Aside from coding, I love to play video games 🎮, attempt to bake or cook new
                             foods 🍳, and go on hikes 🥾 around the Bay Area.
                         </p>
                     </Col>

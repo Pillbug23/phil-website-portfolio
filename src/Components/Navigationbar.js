@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -13,7 +12,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument,CgGitFork } from "react-icons/cg";
-import { FaMountain } from "react-icons/fa";
+
 
 function Navigationbar() {
   const [updateNavbar,setupdateNavbar] = useState(false);
@@ -37,7 +36,7 @@ function Navigationbar() {
       className={updateNavbar ? "nav-blacked" : "navbar"}
     >
         <Container>
-          <Navbar.Brand href="/" className="d-flex">PL</Navbar.Brand>
+          <Navbar.Brand href="/" className="d-flex" style={{ marginRight: "30px" }} >Phillip Ly</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => {setExpand(expand ? false : "expanded");}}/>
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home" style={{ paddingLeft: "12px", paddingRight: "12px"}}>
@@ -59,11 +58,6 @@ function Navigationbar() {
           <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
               <Nav.Link as={Link} to="/resume" onClick={() => setExpand(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-          </Nav.Item>
-          <Nav.Item style={{ paddingLeft: "14px", paddingRight: "14px"}}>
-              <Nav.Link as={Link} to="/misc" onClick={() => setExpand(false)}>
-                <FaMountain style={{ marginBottom: "2px" }} /> Misc.
               </Nav.Link>
           </Nav.Item>
           <Nav.Item className="fork-button" style={{ paddingLeft: "16px", paddingRight: "14px",paddingTop: "2px"}}>

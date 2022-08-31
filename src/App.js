@@ -9,7 +9,6 @@ import Homepage from './Components/Homepage';
 import AboutMe from './Components/AboutMe';
 import Resume from './Components/Resume';
 import Projects from './Components/Projects';
-import Misc from './Components/Misc';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
@@ -24,7 +23,6 @@ function App() {
             <Route path="/about" element={<AboutMe/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/resume" element={<Resume/>}/>
-            <Route path="/misc" element={<Misc/>}/>
           </Routes>
           <Footer/>
         </div>

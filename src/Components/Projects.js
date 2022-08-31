@@ -4,11 +4,10 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import trailapp from "../Images/caltrailss.png";
 import mobileapp from "../Images/2048.png";
-import astronomy from "../Images/astronomy.png";
-import website from "../Images/website.png";
 import git from "../Images/gitlet.png";
 import game from "../Images/byow.png";
 import safety from "../Images/sf_safety.png";
+import classifier from "../Images/Spam_Ham.png";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 
@@ -25,21 +24,15 @@ function Projects() {
                                 <Card.Title style={{marginTop: 10}}> CalTrails </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
                                 A web application that allows users to search for hiking trails near their location 
-                                made with React.js. App allows unique authentication of login and access to user 
-                                profile information. This projects uses API extraction of hiking trail data based on user's 
+                                made with React.js. The user is additionally able to find trails in different areas
+                                through the autocomplete search, and select distance based on preference.
+                                The app allows unique authentication of login and access to user 
+                                profile information. The projects uses API extraction of hiking trail data based on user's 
                                 location. User can favorite hikes and view saved trails through backend.
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/caltrails.github.io">
                                     <BsGithub/>&nbsp;
                                     GitHub
-                                </Button>
-                                <Button 
-                                    variant="primary"
-                                    href="https://pillbug23.github.io/caltrails.github.io/"
-                                    style={{ marginLeft: "10px" }}
-                                >
-                                    <CgWebsite /> &nbsp;
-                                    Demo
                                 </Button>
                             </Card.Body>
                         </Card>
@@ -52,7 +45,7 @@ function Projects() {
                                 <Card.Text style={{textAlign: "justify"}}>
                                 A simple 2D tile-based world exploration engine made with Java. The user is able to explore the map by walking around with the keyboard and 
                                 interacting with the objects in this world. The world consists of rooms (of differing lengths 
-                                and sizes), connected by hallways(the paths used to connect rooms and enable us to travel 
+                                and sizes), connected by hallways (the paths used to connect rooms and enable us to travel 
                                 between them). The user is able to move around with the keyboard (WASD keys) and interact 
                                 with objects. The main objective of this game is to collect 10 flowers.
                                 </Card.Text>
@@ -69,11 +62,8 @@ function Projects() {
                             <Card.Body>
                                 <Card.Title style={{marginTop: 10}}> Gitlet </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                A custom version-control system similiar to git. Functionality includes intialziation of a version control system, 
-                                adding and committing files, removing files, log information, checking out files, branching, and merging. User can 
-                                add and remove files, then commit. Viewing commit information is available through global-log and log functions. The
-                                user can find specific commits with checkout and find methods. User can create new branches and delete them with branch
-                                methods. User can merge multiple branches with the merge method, delete branches with checkout. 
+                                A custom version-control system similiar to git. Functionality includes initialization of a version control system, 
+                                adding and committing files, removing files, viewing log information, checking out files, creating and deleting branches, and merging. 
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/Gitlet">
                                     <BsGithub/>&nbsp;
@@ -86,40 +76,13 @@ function Projects() {
                 <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
                     <Col md={4} className="project-card">
                         <Card className="project-card-view">
-                            <Card.Img variant="top" src={website} alt="card-img"/>
+                            <Card.Img variant="top" src={classifier} alt="card-img"/>
                             <Card.Body>
-                                <Card.Title style={{marginTop: 10}}> Portfolio Website </Card.Title>
+                                <Card.Title style={{marginTop: 10}}> Spam and Ham Classifier </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
-                                My portfolio website built with React as a frontend. Usage of react-icons/bootstrap to style
-                                and design website. User is able to display,view, and navigate to different pages through 
-                                react-router-dom. The website also includes an image gallery personal hikes for anyone 
-                                interested in checking it out.
-                                </Card.Text>
-                                <Button variant="primary" href="https://github.com/Pillbug23/phil-website-portfolio">
-                                    <BsGithub/>&nbsp;
-                                    GitHub
-                                </Button>
-                                <Button 
-                                    variant="primary"
-                                    href="https://philliply-tech.vercel.app/"
-                                    style={{ marginLeft: "10px" }}
-                                >
-                                    <CgWebsite /> &nbsp;
-                                    Demo
-                                </Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4} className="project-card">
-                        <Card className="project-card-view">
-                            <Card.Img variant="top" src={mobileapp} alt="card-img"/>
-                            <Card.Body>
-                                <Card.Title style={{marginTop: 10}}> 2048 clone </Card.Title>
-                                <Card.Text style={{textAlign: "justify"}}>
-                                A recreation of the popular mobile game 2048. The game is played on a 4x4 grid, where the objective of 
-                                the game is to merge numbered tiles until it reaches the number 2048. Two tiles of the same value merge into 
-                                one tile containing double the initial number. The user controls the direction of which the tiles merge
-                                by using the arrow keys.
+                                Built a logistic regression classifier to determine spam emails from non-spam emails using Python. Utilized Sk-learn libraries
+                                to process and fit data, implementation of data visualizations using Python's Seaborn library, and Natural Language Toolkit
+                                to analyze text data. 
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/2048/game2048">
                                     <BsGithub/>&nbsp;
@@ -135,7 +98,7 @@ function Projects() {
                                 <Card.Title style={{marginTop: 10}}> SF Food Safety Analysis </Card.Title>
                                 <Card.Text style={{textAlign: "justify"}}>
                                     An analysis of food safety ratings in San Francisco using Python's data visualization tools and Pandas. In this project we explore
-                                    ratings based on zip code, violations correlated with low scoring resturants, recent and highly located violations within the SF region.
+                                    ratings based on zip code, violations correlated with low scoring restaurants, and highly located violations within the SF region.
                                 </Card.Text>
                                 <Button variant="primary" href="https://github.com/Pillbug23/Portfolio/tree/main/Food_Safety">
                                     <BsGithub/>&nbsp;

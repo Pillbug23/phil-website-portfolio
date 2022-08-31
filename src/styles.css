@@ -1,7 +1,5 @@
 /*For all keyword text*/
-b {
-  color: #FF4500;
-}
+
 
 /*Navbar styling*/
 .navbar {
@@ -31,6 +29,9 @@ background-color: #1b1a2ea9;
   backdrop-filter: blur(15px);
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255,255), 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 /*Color and font of the logo*/
 .navbar-brand {
@@ -366,11 +367,6 @@ background-color: #1b1a2ea9;
   }
 }
 
-.tech-stack:hover {
-  transform: scale(1.05);
-  overflow: hidden;
-  border:2.2px solid whitesmoke;
-}
 
 
 
@@ -402,12 +398,6 @@ background-color: #1b1a2ea9;
   opacity: 0.9;
   transition: all 0.5s ease 0s;
   height: 100%;
-}
-
-.project-card-view:hover {
-  transform: scale(1.04);
-  overflow: hidden;
-  box-shadow: 0 4px 4px 5px #FF4500;
 }
 
 /*Misc section*/

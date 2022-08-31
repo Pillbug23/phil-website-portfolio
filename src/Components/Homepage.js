@@ -27,37 +27,13 @@ function Homepage() {
         <Container className="home-content-info">
           <Row>
             <Col md={7} className="home-header tri-right left-in">
-              <h1 style={{ paddingBottom: 20}} className="heading-name" >
-                Hi everyone!&nbsp;
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
-
               <h1 className="major">
                 I'm
                 <strong className="major-school"> Phillip Ly </strong>
               </h1>
 
               <div style={{padding: 35, textAlign: "left", paddingTop: 90}}>
-                <TypeWriterEffect
-                  textStyle={{
-                    color: 'whitesmoke',
-                    fontSize: '2.4em',
-                    fontWeight: 500,
-                  }}
-                  startDelay={2000}
-                  cursorColor="#3F3D56"
-                  multiText={[
-                    "Developer",
-                    'MERN Stack Developer',
-                    'Coding Enthusiast',
-                    'Berkeley Graduate',
-                    'Economics @ UC Berkeley',
-                  ]}
-                  multiTextDelay={1000}
-                  typeSpeed={50}
-                />            
+                <h1>Front end developer, Economics at UC Berkeley</h1>            
               </div>
 
             </Col>
@@ -93,34 +69,34 @@ function Homepage() {
               A little about myself...
             </h1>
             <p className="home-about-body">
-              I'd like to think if I can build this then I have at least learnt
+              I'd like to think if I can build this then I have at least learned
               something 🛠
               <br />
               <br />I am fluent in 
               <i>
-                <b> Javascript, Java, and Python. </b>
+                <b> JavaScript, Java, and Python. </b>
               </i>
               <br />
               <br />
               My field of interest is&nbsp;
-                <b>Frontend </b>; I love being able to build software&nbsp; 
+                <b>Frontend </b>; I love being able to build software that&nbsp; 
               <i> 
                 <b>
-                utilizes data visualization tools, building applicable software to improve lives, and implement creative and beautiful design.
+                utilizes data visualization tools, building applicable software that improve lives, and implement creative and beautiful design.
                 </b>
               </i>
               <br />
               <br />
               Whenever possible, I develop projects
-              with <b>Node.js, JS frameworks like React.js</b> and
+              using technologies like <b>Node.js, JS frameworks like React.js</b> and
               <i>
                 <b>
-                  &nbsp;explore different React frameworks 
+                  &nbsp;utilizing different React UI frameworks 
                 </b>
               </i>
               &nbsp;like
               <i>
-                <b> Bootstrap and MaterialUI</b>
+                <b> React Bootstrap and MaterialUI.</b>
               </i>
             </p>
           </Col>
