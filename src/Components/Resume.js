@@ -1,29 +1,29 @@
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-import Button from 'react-bootstrap/Button';
-import pdf from "../Images/PL_Resume.pdf"
+import Button from "react-bootstrap/Button";
+import pdf from "../Images/Resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
-    const [width,setWidth] = useState(1200);
+  const [width, setWidth] = useState(1200);
 
-    useEffect(() => {
-      setWidth(window.innerWidth)
-    },[])
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
 
-    return (
-      <div>
+  return (
+    <div>
       <Container fluid className="resume-section">
         <Row style={{ justifyContent: "center", position: "relative" }}>
-            <Button
-              variant="primary"
-              href={pdf}
-              style={{ maxWidth: "250px" }}
-              type="button"
-            >
+          <Button
+            variant="primary"
+            href={pdf}
+            style={{ maxWidth: "250px" }}
+            type="button"
+          >
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
@@ -34,19 +34,19 @@ function Resume() {
           </Document>
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-            <Button
-              variant="primary"
-              href={pdf}
-              style={{ maxWidth: "250px" }}
-              type="button"
-            >
+          <Button
+            variant="primary"
+            href={pdf}
+            style={{ maxWidth: "250px" }}
+            type="button"
+          >
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
         </Row>
       </Container>
-      </div>
-    );
+    </div>
+  );
 }
 
 export default Resume;

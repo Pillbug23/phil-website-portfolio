@@ -1,29 +1,31 @@
 /*For all keyword text*/
-
-
+i {
+  color: #64ffda;
+}
 /*Navbar styling*/
 .navbar {
-    position: fixed;
-    transition: all 0.3s ease-out 0s;
-    padding: 0.3rem 2rem;
-    font-size: 1.2rem;
+  position: fixed;
+  transition: all 0.3s ease-out 0s;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 /*When screen size shrinks make font bigger/background visible, disable hover line*/
 @media (max-width: 767px) {
-    .navbar {
-      padding: 1rem 2rem;
-      font-size: 1.4rem;
-      background-color: #181a27;
-    }
-    .navbar-nav .nav-item a::after {
-      display: none;
-    }
+  .navbar {
+    padding: 2rem 2rem;
+    font-size: 1.4rem;
+    background-color: #181a27;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none;
+  }
 }
 
 /*Scrolling feature colors*/
 .nav-blacked {
-background-color: #1b1a2ea9;
+  background-color: #1b1a2ea9;
   transition: all 0.3s ease-out 0s;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
   backdrop-filter: blur(15px);
@@ -35,41 +37,41 @@ background-color: #1b1a2ea9;
 
 /*Color and font of the logo*/
 .navbar-brand {
-    color: whitesmoke;
-    font-size: 1.7rem;
+  color: whitesmoke;
+  font-size: 1.7rem;
 }
 
 /*Logo hover color: tbd what I want it to be*/
 .navbar-brand:hover {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 /*Color of each nav item*/
 .navbar-nav .nav-link {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 /*Aesthestics each item*/
 .nav-link {
-    font-weight: 200;
-    transition: all 0.3s ease-out 0s;
-    position: relative;
-    z-index: 1;
+  font-weight: 200;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
 }
-  
+
 /*Line drawn from hover left to right, taken from css animations*/
 .nav-link::after {
-    content: "";
-    position: relative;
-    display: block;
-    height: 5px;
-    width: 0;
-    border-radius: 16px;
-    background: whitesmoke;
-    bottom: 1px;
-    left: 0;
-    z-index: -1;
-    transition: all 0.3s ease-out 0s;
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: whitesmoke;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
 }
 
 /*Line drawn from hover left to right, taken from css animations*/
@@ -86,61 +88,54 @@ background-color: #1b1a2ea9;
 
 /*button transistions*/
 .fork-btn-inner:hover {
-    top: -5px;
+  top: -5px;
 }
 
 /*button transistions*/
 .fork-btn-inner:hover::after {
-    width: 0%;
+  width: 0%;
 }
-
-
-
-
-
-
 
 /* Homepage */
 /*Home background image*/
 .home-section-info {
-    position: relative;
-    z-index: -1;
-    background-image: url(./Images/fancy-pants.jpg);
-    background-position: top center;
-    background-repeat: repeat;
-    padding-bottom: 30px;
-    padding-top: 30px;
+  position: relative;
+  z-index: -1;
+  background-color: #233554;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 /*Name positioning*/
-  .home-header {
-    padding-top: 25px;
-    background-color: #1266F1;
-    border-radius: 30px;
-    align-self: flex-end;
-    margin-bottom: 95px;
-  }
+.home-header {
+  padding-top: 105px;
+  border-radius: 30px;
+  align-self: flex-end;
+  margin-bottom: 310px;
+}
 
-  
-  .home-content-info {
-    padding: 3rem 0 2rem;
-    color: whitesmoke;
-    text-align: left;
-  }
-  
-
-
+.home-content-info {
+  padding: 3rem 0 2rem;
+  color: whitesmoke;
+  text-align: left;
+}
 
 /*Main tag positioning/font*/
 .heading-name {
-    font-size: 2.5em;
-    padding-left: 35px;
+  font-size: 2.9em;
+  padding-left: 35px;
 }
-  
+
 /*Main tag positioning/font*/
 .major {
-    font-size: 2.6em;
-    padding-left: 35px;
+  font-size: 1.3em;
+  padding-left: 35px;
+}
+
+/*Main tag for styling name*/
+.name {
+  font-size: 10.9em;
 }
 
 /*description inside about me*/
@@ -149,71 +144,27 @@ background-color: #1b1a2ea9;
   padding-bottom: 70px;
   padding-top: 70px;
   margin-top: 120px;
-  background-color: #1266F1;
   border-radius: 30px;
 }
 
 /*description inside about me*/
 .home-about-body {
-    color: white;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-size: 1.3em;
-    text-align: left;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 1.3em;
+  text-align: left;
 }
-
-/*Hand waving animation*/
-.wave {
-    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.1s; /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-    display: inline-block;
-  }
-  
-  @keyframes wave-animation {
-    0% {
-      transform: rotate(0deg);
-    }
-    10% {
-      transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-      transform: rotate(-8deg);
-    }
-    30% {
-      transform: rotate(14deg);
-    }
-    40% {
-      transform: rotate(-4deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-    60% {
-      transform: rotate(0deg);
-    } /* Reset for the last half to pause */
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-
-
-
-
-
-
 
 /*Resume*/
 .resume-section {
-    position: relative;
-    background-image: url(./Images/fancy-pants.jpg);
-    background-position: top center;
-    background-repeat: repeat;
-    padding-bottom: 60px;
-    padding-top: 100px;
-    color: whitesmoke;
+  position: relative;
+  background-color: #233554;
+  background-position: top center;
+  background-repeat: repeat;
+  padding-bottom: 60px;
+  padding-top: 100px;
+  color: whitesmoke;
 }
 
 .resume-pdf {
@@ -230,14 +181,14 @@ background-color: #1b1a2ea9;
   padding-left: 80px;
 }
 
-
 /*Footer*/
 /*Container for footer*/
 .bottom-footer {
-    background-color: rgb(45, 45, 46);
-    bottom: 0;
-    padding-top: 12px;
-    padding-bottom: 2px;
+  background-color: #233554;
+  bottom: 0;
+  padding-top: 12px;
+  padding-bottom: 2px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 /*Credits*/
@@ -279,31 +230,24 @@ background-color: #1b1a2ea9;
   font-size: 30px;
 }
 
-
-
 /*Scroll bar styling*/
 .simplebar-scrollbar::before {
   background-color: whitesmoke;
   overflow: auto;
   opacity: 0.7;
 }
-  
-
-
-
-
 
 /*About section*/
 .about-me-section {
   position: relative;
   padding-top: 110px;
   padding-bottom: 30px;
-  background-image: url(./Images/fancy-pants.jpg);
+  background-color: #233554;
   background-position: top center;
   background-repeat: repeat;
   color: whitesmoke;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
-
 
 .about-me-title {
   font-size: 2.1em;
@@ -342,12 +286,11 @@ background-color: #1b1a2ea9;
   margin-bottom: -15px;
 }
 
-
 /*Tech icons*/
 .tech-stack {
   font-size: 3.9em;
   margin: 15px;
-  border:1.9px solid whitesmoke;
+  border: 1.9px solid whitesmoke;
   border-radius: 15px;
   padding: 10px;
   padding-bottom: 25px;
@@ -356,7 +299,7 @@ background-color: #1b1a2ea9;
   text-align: center;
   border-radius: 5px;
   display: table;
-  box-shadow: 4px 2px 3px 1px #FF4500;
+  box-shadow: 4px 2px 3px 1px #64ffda;
   overflow: hidden;
   transition: all 0.4s ease 0s;
 }
@@ -367,20 +310,16 @@ background-color: #1b1a2ea9;
   }
 }
 
-
-
-
-
-
 /*App project section*/
 .app-project-section {
   position: relative;
   padding-top: 110px;
   padding-bottom: 30px;
-  background-image: url(./Images/fancy-pants.jpg);
+  background-color: #233554;
   background-position: top center;
   background-repeat: repeat;
   color: whitesmoke;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 .project-card {
@@ -392,7 +331,7 @@ background-color: #1b1a2ea9;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #FF4500;
+  box-shadow: 0 4px 5px 3px #64ffda;
   color: whitesmoke;
   background-color: transparent;
   opacity: 0.9;
