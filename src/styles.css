@@ -31,12 +31,27 @@ i {
   backdrop-filter: blur(15px);
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255,255), 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar-toggler {
+  position: relative !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 
-.navbar-toggler {
-  color: whitesmoke;
+.navbar-toggler span {
+  display: block !important;
+  background-color: whitesmoke !important;
+  height: 4px !important;
+  width: 27px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  transform: rotate(0deg) !important;
+  left: 0 !important;
+  opacity: 1 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0 !important;
 }
 
 /*Color and font of the logo*/
@@ -189,9 +204,9 @@ i {
 /*Container for footer*/
 .bottom-footer {
   background-color: #233554;
-  bottom: 0;
-  padding-top: 122px;
-  padding-bottom: 2px;
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
