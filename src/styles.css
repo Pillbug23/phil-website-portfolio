@@ -31,8 +31,12 @@ i {
   backdrop-filter: blur(15px);
 }
 
-.navbar-light .navbar-toggler-icon {
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255,255), 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  color: whitesmoke;
 }
 
 /*Color and font of the logo*/
@@ -41,7 +45,7 @@ i {
   font-size: 1.7rem;
 }
 
-/*Logo hover color: tbd what I want it to be*/
+/*Logo hover color: */
 .navbar-brand:hover {
   color: whitesmoke;
 }
@@ -186,7 +190,7 @@ i {
 .bottom-footer {
   background-color: #233554;
   bottom: 0;
-  padding-top: 12px;
+  padding-top: 122px;
   padding-bottom: 2px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
