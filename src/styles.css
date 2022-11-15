@@ -119,12 +119,13 @@ i {
   z-index: -1;
   background-color: #233554;
   padding-bottom: 35px;
-  padding-top: 35px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 /*Name positioning*/
 .home-header {
+  padding-top: 70px;
+  margin-top: 120px;
   padding-top: 105px;
   border-radius: 30px;
   align-self: flex-end;
@@ -178,8 +179,8 @@ i {
   background-color: #233554;
   background-position: top center;
   background-repeat: repeat;
-  padding-bottom: 60px;
-  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-top: 160px;
   color: whitesmoke;
 }
 
@@ -329,7 +330,7 @@ i {
 /*App project section*/
 .app-project-section {
   position: relative;
-  padding-top: 110px;
+  padding-top: 170px;
   padding-bottom: 30px;
   background-color: #233554;
   background-position: top center;
