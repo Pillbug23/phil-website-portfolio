@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import trailapp from "../Images/caltrailss.png";
+import trailapp from "../Images/hike.png";
 import git from "../Images/gitlet.png";
 import game from "../Images/byow.png";
 import safety from "../Images/sf_safety.png";
+import recipe from "../Images/recipe.png";
 import classifier from "../Images/Spam_Ham.png";
 import scheme from "../Images/scheme.png";
 import astronomy from "../Images/astronomy.png";
@@ -77,19 +78,23 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <Card className="project-card-view">
-              <Card.Img variant="top" src={git} alt="card-img" />
+              <Card.Img variant="top" src={recipe} alt="card-img" />
               <Card.Body>
-                <Card.Title style={{ marginTop: 10 }}> Gitlet </Card.Title>
+                <Card.Title style={{ marginTop: 10 }}> Calcipes </Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
-                  A custom version-control system similiar to git. Functionality
-                  includes initialization of a version control system, adding
-                  and committing files, removing files, viewing log information,
-                  checking out files, creating and deleting branches, and
-                  merging. Contact philly79@berkeley.edu for code.
+                  A dynamic web application that allows users to search for
+                  recipes made with React.js. The user is able to look and view
+                  recipe information, instructions and nutrition. The app allows
+                  authentication of login and access to user profile information
+                  and storage of recipe information to view and modify. The
+                  projects uses API extraction of recipe data for dynamic
+                  routing based on search parameters, category, and an open home
+                  page for random recipes during initial view. User is able to
+                  navigate between pages to view recipes.
                 </Card.Text>
                 <Button
                   variant="primary"
-                  href="https://github.com/Pillbug23/Portfolio/tree/main/Gitlet"
+                  href="https://github.com/Pillbug23/recipe-app"
                 >
                   <BsGithub />
                   &nbsp; GitHub
@@ -205,6 +210,28 @@ function Projects() {
                 <Button
                   variant="primary"
                   href="https://github.com/Pillbug23/Portfolio/tree/main/scheme"
+                >
+                  <BsGithub />
+                  &nbsp; GitHub
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4} className="project-card">
+            <Card className="project-card-view">
+              <Card.Img variant="top" src={git} alt="card-img" />
+              <Card.Body>
+                <Card.Title style={{ marginTop: 10 }}> Gitlet </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  A custom version-control system similiar to git. Functionality
+                  includes initialization of a version control system, adding
+                  and committing files, removing files, viewing log information,
+                  checking out files, creating and deleting branches, and
+                  merging. Contact philly79@berkeley.edu for code.
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  href="https://github.com/Pillbug23/Portfolio/tree/main/Gitlet"
                 >
                   <BsGithub />
                   &nbsp; GitHub
